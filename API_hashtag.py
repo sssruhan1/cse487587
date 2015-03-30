@@ -2,7 +2,7 @@
 
 """
 
-Use Twitter API to grab user information from list of organizations; 
+Use Twitter API to grab tweets using hashtags; 
 export text file
 
 Uses Twython module to access Twitter API
