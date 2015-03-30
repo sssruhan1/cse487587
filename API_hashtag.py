@@ -2,7 +2,7 @@
 
 """
 
-Use Twitter API to grab user information from list of organizations; 
+Use Twitter API to grab tweets using hashtags; 
 export text file
 
 Uses Twython module to access Twitter API
@@ -23,10 +23,10 @@ year=int(now.year)
 
 
 #FOR OAUTH AUTHENTICATION -- NEEDED TO ACCESS THE TWITTER API
-t = Twython(app_key='Jt0iBEeT4Dk1nsYW2g4CGJ1ZY', #REPLACE 'APP_KEY' WITH YOUR APP KEY, ETC., IN THE NEXT 4 LINES
-    app_secret='Xx1F66OssdUnKIpY4Plih3RpGce6T7Xsuvca69nYXyeh15Wp1B',
-    oauth_token='2652772872-W9GTB3c973ayomnFPW1qEFgieNpskT5yJAD0c29',
-    oauth_token_secret='nHdpiqLHzQVGSfVqgM7JgFN89FSpdkJpLdTNX1YYskx0G')
+t = Twython(app_key='API_KEY', #REPLACE 'APP_KEY' WITH YOUR APP KEY, ETC., IN THE NEXT 4 LINES
+    app_secret='API_SECRET',
+    oauth_token='ACCESS_TOKEN',
+    oauth_token_secret='TOKEN_SECRET')
    
 data = t.search(q='#UB', count=30)
 tweets = data['statuses']
